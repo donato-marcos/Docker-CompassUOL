@@ -1,0 +1,8 @@
+name: web_landing
+
+services:
+  landing-page:
+    build: .
+    ports:
+      - "8080:80"
+    restart: unless-stopped
