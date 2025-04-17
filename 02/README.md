@@ -43,6 +43,10 @@ Uma vez dentro do container (você verá o prompt mudar para algo como `root@con
    chmod +x /meu_script.sh
    ./meu_script.sh
    ```
+   Script executado:
+   
+   ![image](https://github.com/user-attachments/assets/79779bab-7e83-4251-bc3b-aba0c295a7a6)
+
 
 ## Passo 3: Saindo do container
 
@@ -60,7 +64,7 @@ exit
 
 Para reiniciar e reentrar no container:
 ```bash
-docker start meu_container_ubuntu
+docker start meu_container
 docker exec -it meu_container /bin/bash
 ```
 
