@@ -49,5 +49,5 @@ docker rm -f meu_container
 ```bash
 docker container prune
 ```
-![image](https://github.com/user-attachments/assets/849a7cf9-a3e9-4b1e-a50d-02867aef64b0)
+![image](https://github.com/user-attachments/assets/23f48955-007c-4a90-a2b1-92dc2dc64d5b)
 
