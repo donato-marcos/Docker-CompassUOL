@@ -30,7 +30,7 @@ EXPOSE 80
 
 CMD ["nginx", "-g", "daemon off;"]
 ```
-[Dockerfile]()
+[Dockerfile](01/Dockerfile)
 
 Este Dockerfile simples:
 1. Utiliza a imagem oficial do Nginx como base
