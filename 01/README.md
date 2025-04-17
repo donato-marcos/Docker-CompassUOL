@@ -30,7 +30,7 @@ EXPOSE 80
 
 CMD ["nginx", "-g", "daemon off;"]
 ```
-[Dockerfile](01/Dockerfile)
+[Dockerfile](Dockerfile)
 
 Este Dockerfile simples:
 1. Utiliza a imagem oficial do Nginx como base
@@ -49,7 +49,7 @@ services:
       - "8080:80"
     restart: unless-stopped
 ```
-[docker-compose.yml]()
+[docker-compose.yml](docker-compose.yml)
 
 O arquivo `docker-compose.yml` simplifica o gerenciamento do container com:
 - Build automático da imagem
