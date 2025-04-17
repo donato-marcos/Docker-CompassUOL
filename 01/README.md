@@ -56,12 +56,6 @@ O arquivo `docker-compose.yml` simplifica o gerenciamento do container com:
 - Mapeamento de portas
 - Política de reinício automático
 
-## Como Executar
-
-### Pré-requisitos
-- Docker instalado (versão 20.10+ recomendada)
-- Docker Compose (se estiver usando o método compose)
-
 ## Estrutura do Projeto
 
 ```
@@ -73,7 +67,15 @@ O arquivo `docker-compose.yml` simplifica o gerenciamento do container com:
 │   └── hero.png        # Imagem do cabeçalho
 ```
 
+## Como Executar
+
+### Pré-requisitos
+- Docker instalado (versão 20.10+ recomendada)
+- Docker Compose (se estiver usando o método compose)
+
 ### Passos
+
+### Método Docker CLI
 
 1. Construa a imagem Docker:
    ```bash
@@ -83,6 +85,13 @@ O arquivo `docker-compose.yml` simplifica o gerenciamento do container com:
 2. Execute o container:
    ```bash
    docker run -d -p 8080:80 --name minha-landing landing-page
+   ```
+
+### Método Docker Compose
+
+1. Execute o compose:
+   ```bash
+   docker-compose up -d
    ```
 
 3. Acesse a aplicação:
@@ -97,6 +106,8 @@ O arquivo `docker-compose.yml` simplifica o gerenciamento do container com:
 
 ## Gerenciamento do Container
 
+### Para containers criados via Docker CLI
+
 - Para parar o container:
   ```bash
   docker stop minha-landing
@@ -110,6 +121,23 @@ O arquivo `docker-compose.yml` simplifica o gerenciamento do container com:
 - Para remover:
   ```bash
   docker rm minha-landing
+  ```
+
+### Para containers criados via Docker Compose
+
+- Para parar e remover:
+  ```bash
+  docker-compose down
+  ```
+
+- Para reiniciar:
+  ```bash
+  docker-compose restart
+  ```
+
+- Para visualizar logs:
+  ```bash
+  docker-compose logs
   ```
 
 
