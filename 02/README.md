@@ -43,6 +43,7 @@ Uma vez dentro do container (você verá o prompt mudar para algo como `root@con
    chmod +x /meu_script.sh
    ./meu_script.sh
    ```
+   
    Script executado:
    
    ![image](https://github.com/user-attachments/assets/79779bab-7e83-4251-bc3b-aba0c295a7a6)
@@ -72,3 +73,10 @@ Para remover o container quando não for mais necessário:
 ```bash
 docker rm meu_container
 ```
+
+# PS
+#  *Caso tenha o script em uma pasta no host, poderá vincular um volume ao container*
+   ```bash
+   docker run -it --name meu_container -v "$(pwd)/logs.sh:/logs.sh" ubuntu /bin/bash
+   ```
+
