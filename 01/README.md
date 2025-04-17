@@ -40,10 +40,10 @@ Este Dockerfile simples:
 ## Docker Compose
 
 ```yaml
-name: web_landing
+name: landing
 
 services:
-  landing-page:
+  web-page:
     build: .
     ports:
       - "8080:80"
