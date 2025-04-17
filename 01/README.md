@@ -30,22 +30,44 @@ EXPOSE 80
 
 CMD ["nginx", "-g", "daemon off;"]
 ```
+[Dockerfile]()
 
 Este Dockerfile simples:
 1. Utiliza a imagem oficial do Nginx como base
 2. Copia o conteúdo da pasta `tailwind` (que deve conter `index.html` e `hero.png`)
 3. Expõe a porta 80 padrão do Nginx
 
+## Docker Compose
+
+```yaml
+name: web_landing
+
+services:
+  landing-page:
+    build: .
+    ports:
+      - "8080:80"
+    restart: unless-stopped
+```
+[docker-compose.yml]()
+
+O arquivo `docker-compose.yml` simplifica o gerenciamento do container com:
+- Build automático da imagem
+- Mapeamento de portas
+- Política de reinício automático
+
 ## Como Executar
 
 ### Pré-requisitos
 - Docker instalado (versão 20.10+ recomendada)
+- Docker Compose (se estiver usando o método compose)
 
 ## Estrutura do Projeto
 
 ```
 01
 ├── Dockerfile          # Configuração do container
+├── docker-compose.yml  # Configuração do compose
 ├── tailwind
 │   ├── index.html      # Página principal
 │   └── hero.png        # Imagem do cabeçalho
