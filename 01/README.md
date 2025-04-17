@@ -6,7 +6,7 @@ Este projeto é uma landing page simples empacotada em um container Docker para 
 
 A aplicação consiste em:
 - Uma página HTML estática (`index.html`)
-- Uma imagem de hero (`hero.png`)
+- Uma imagem (`hero.png`)
 - Servida pelo Nginx em um container Docker
 
 ## Tecnologias Utilizadas
