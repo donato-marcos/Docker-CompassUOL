@@ -44,10 +44,10 @@ docker rm $(docker ps -aq)    # Remove todos os containers
 ```bash
 docker rm -f meu_container
 ```
-![image](https://github.com/user-attachments/assets/02719ff7-e76a-482e-9442-4185d931944c)
-
 
 **Limpar todos os containers parados:**
 ```bash
 docker container prune
 ```
+![image](https://github.com/user-attachments/assets/849a7cf9-a3e9-4b1e-a50d-02867aef64b0)
+
