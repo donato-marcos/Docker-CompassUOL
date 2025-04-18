@@ -32,6 +32,7 @@ EXPOSE 8000
 
 CMD ["python", "script.py"]
 ```
+[Dockerfile](Dockerfile)
 
 Este Dockerfile:
 1. Utiliza a imagem oficial Python slim como base
@@ -51,6 +52,7 @@ services:
     ports:
       - "8000:8000"
 ```
+[docker-compose.yml](docker-compose.yml)
 
 O arquivo `docker-compose.yml` simplifica a execução com:
 - Build automático da imagem
