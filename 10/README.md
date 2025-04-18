@@ -1,4 +1,4 @@
-# Exercício 10: Evitar Execução como Root
+# Evitar Execução como Root
 
 Este projeto demonstra como configurar um container Docker para executar uma aplicação Python com um usuário não-root, reduzindo riscos de segurança.
 
@@ -12,6 +12,22 @@ A aplicação consiste em:
 
 - **Docker** - Para containerização e implantação segura
 - **Python** - Linguagem de programação para o script de exemplo
+
+## Script Python
+
+```python
+#!/usr/bin/env python3
+
+import os
+import time
+
+while True:
+    print("Verificando usuário atual:")
+    print(f"User ID (UID): {os.getuid()}")
+    print(f"Group ID (GID): {os.getgid()}")
+    print("------")
+    time.sleep(2)  # Pausa de 2 segundos
+```
 
 ## Dockerfile
 
@@ -93,6 +109,9 @@ O arquivo `docker-compose.yml` simplifica a execução com:
    docker exec meu_container whoami
    ```
    Saída esperada: `teste`
+   
+   ![image](https://github.com/user-attachments/assets/2f34dff3-53f7-4654-9d76-621d16b35510)
+
 
 #### Método Docker Compose
 
@@ -106,11 +125,16 @@ O arquivo `docker-compose.yml` simplifica a execução com:
    docker-compose exec script whoami
    ```
    Saída esperada: `teste`
+   
+   ![image](https://github.com/user-attachments/assets/a6316648-e2a8-4065-8234-8801680a61b1)
 
-3. Acesse os logs do script:
+
+4. Acesse os logs do script:
    ```bash
    docker-compose logs -f
    ```
+   ![image](https://github.com/user-attachments/assets/1456cc33-eae8-4b08-ad80-4ac434fe6e87)
+
 
 ## Benefícios da Execução como Não-Root
 
