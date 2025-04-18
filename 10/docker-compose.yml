@@ -1,0 +1,7 @@
+name: python
+
+services:
+  script:
+    build: .
+    ports:
+      - "8000:8000"
