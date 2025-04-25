@@ -1,8 +1,6 @@
-# README
+# Projeto Flask com Docker Compose
 
-## Projeto Flask com Docker Compose
-
-Este projeto utiliza uma configuração pronta do Docker Compose para executar uma aplicação Flask simples. O repositório original `awesome-compose` da Docker já fornece um ambiente funcional sem a necessidade de criar manualmente um Dockerfile.
+Este projeto utiliza uma configuração pronta do Docker Compose para executar uma aplicação Flask simples. O repositório original `[awesome-compose]`(https://github.com/docker/awesome-compose/tree/master) da Docker já fornece um ambiente funcional sem a necessidade de criar manualmente um Dockerfile.
 
 ### Como executar o projeto
 
