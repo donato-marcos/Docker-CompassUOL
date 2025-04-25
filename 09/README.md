@@ -1,4 +1,4 @@
-# README - Material Kit com Docker
+# Material Kit com Docker
 
 Este projeto containeriza o Material Kit do Creative Tim usando Nginx em um container Docker para fácil implantação e desenvolvimento.
 
