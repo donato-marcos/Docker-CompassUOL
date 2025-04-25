@@ -25,6 +25,7 @@ Para confirmar que o volume foi criado e está sendo utilizado, execute:
 ```bash
 docker volume ls
 ```
+![image](https://github.com/user-attachments/assets/6b25bd92-6828-4724-9ae1-d81d8eefe133)
 
 Você verá um volume listado, que está sendo usado pelo container MySQL para persistir os dados.
    
