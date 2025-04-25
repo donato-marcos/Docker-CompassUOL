@@ -21,4 +21,4 @@ Este projeto utiliza uma configuração pronta do Docker Compose para executar u
 
 ### Observações
 - O arquivo `compose.yaml` já contém toda a configuração necessária, incluindo a construção da imagem Docker e a exposição da aplicação Flask.
-- A aplicação estará disponível no endpoint configurado (geralmente `http://localhost:8000`).
+- A aplicação estará disponível no endpoint configurado (geralmente `http://IP_do_Docker:8000`).
