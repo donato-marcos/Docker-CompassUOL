@@ -11,6 +11,8 @@ REPOSITORY                   TAG       IMAGE ID       CREATED        SIZE
 gs-ping_multi-stage          latest    c3425foc64ae   11 minutes ago 28.3MB
 gs-ping_one-stage            latest    14cf38030744   14 minutes ago 1.176GB
 ```
+![image](https://github.com/user-attachments/assets/32713a87-08b6-4d78-867d-99339d9e077b)
+
 
 ## Comparação
 
