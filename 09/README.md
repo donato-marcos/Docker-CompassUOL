@@ -15,6 +15,12 @@ A aplicação consiste em:
 - **Nginx (Alpine)** - Servidor web leve e eficiente
 - **Material Kit** - Design system moderno para landing pages
 
+# Clone o repositório (se ainda não tiver feito)
+
+```bash
+git clone https://github.com/creativetimofficial/material-kit.git
+```
+
 ## Dockerfile
 
 ```dockerfile
