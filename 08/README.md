@@ -1,5 +1,8 @@
 # Docker Compose para Aplicação com PostgreSQL e pgAdmin
 
+Este projeto utiliza uma configuração pronta do Docker Compose para executar uma aplicação que utilizad o banco de dados PostgreSQL com pgAdmin simples. O repositório original [`awesome-compose`](https://github.com/docker/awesome-compose/tree/master) da Docker já fornece um ambiente funcional sem a necessidade de criar manualmente um Dockerfile.
+
+
 ## Instruções para configurar o ambiente
 
 1. **Clone o repositório awesome-compose**:
