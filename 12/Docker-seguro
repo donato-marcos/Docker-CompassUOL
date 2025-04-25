@@ -1,0 +1,9 @@
+FROM python:3.9-alpine
+RUN apk update && apk upgrade --no-cache
+WORKDIR /app
+COPY requirements_alpine.txt .
+RUN pip install --no-cache-dir -r requirements_alpine.txt
+RUN adduser -S -h teste teste
+COPY . .
+USER teste
+CMD ["python", "./app.py"]
