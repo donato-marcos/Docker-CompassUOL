@@ -1,0 +1,7 @@
+services:
+  material-kit:
+    build: .
+    ports:
+      - "8080:80"
+    volumes:
+      - ./material-kit:/usr/share/nginx/html
