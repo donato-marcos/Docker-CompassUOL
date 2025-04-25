@@ -13,6 +13,8 @@ Esta avaliação contém exercícios práticos de containerização com Docker, 
 
 ### Médio
 
+- [Exercício 05](05/README.md)
+
 ### Difícil
 
 - [Exercício 09](09/README.md)
